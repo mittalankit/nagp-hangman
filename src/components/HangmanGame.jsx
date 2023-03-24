@@ -6,7 +6,7 @@ class HangmanGame extends Component {
   componentDidMount() {
     // -----------------------------
 
-    window.onload = function () {
+    (function(){
       var alphabet = [
         "a",
         "b",
@@ -299,7 +299,7 @@ class HangmanGame extends Component {
         context.clearRect(0, 0, 400, 400);
         play();
       };
-    };
+    })();
   }
 
   render() {
